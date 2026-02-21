@@ -1,0 +1,25 @@
+{
+	// --security-opt seccomp=unconfined
+	"name": "debian-repo",
+	"postCreateCommand": "chmod +x ./.devcontainer/post-install.sh && ./.devcontainer/post-install.sh",
+    "shutdownAction": "stopContainer",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		// Only for allowing io_uring syscalls. Should use custom seccomp filter in production.
+		// "--security-opt", "seccomp=unconfined"
+  	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.cpptools-extension-pack",
+				"twxs.cmake",
+				"ms-vscode.cmake-tools",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}
