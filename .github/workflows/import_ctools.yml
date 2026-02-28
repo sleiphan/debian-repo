@@ -1,0 +1,43 @@
+name: Update Debian Repository
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"  # every hour
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install reprepro
+        run: |
+          sudo apt update
+          sudo apt install -y reprepro gnupg curl
+
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+
+      - name: Download latest release from project
+        run: |
+          mkdir incoming
+          curl -L -o incoming/ctools-dev.deb \
+            https://github.com/Sleiphan/c-tools/releases/latest/download/ctools-dev.deb
+          curl -L -o incoming/ctools-runtime.deb \
+            https://github.com/Sleiphan/c-tools/releases/latest/download/ctools-runtime.deb
+
+      - name: Include package in repo
+        run: |
+          reprepro includedeb stable incoming/*.deb
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Update repo"
+          git push
