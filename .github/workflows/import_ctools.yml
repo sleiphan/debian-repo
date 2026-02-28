@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 * * * *"  # every hour
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: debian:latest
