@@ -7,18 +7,27 @@ permissions:
   contents: write
   packages: read # required for ghcr.io
 
+defaults:
+    run:
+      working-directory: packages
+
 jobs:
   update:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/${{ github.repository }}/import-package:latest
-      options: --user 0
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Fix workspace permissions
+        working-directory: .
+        run: |
+          chown -R $(id -u):$(id -g) .
+
       - name: Import GPG key
+        working-directory: .
         run: |
           echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
 
@@ -36,14 +45,8 @@ jobs:
         run: |
           rm -rf incoming
 
-      - name: Fix workspace permissions
-        run: |
-          chown -R $(id -u):$(id -g) .
-
       - name: Commit changes
         run: |
-          pwd
-          ls -la
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
