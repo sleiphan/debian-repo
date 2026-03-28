@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update:
-    runs-on: debian:latest
+    runs-on: debian-latest
 
     steps:
       - name: Checkout repo
