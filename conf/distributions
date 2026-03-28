@@ -1,0 +1,8 @@
+Origin: Personal Repository
+Label: Personal Repository
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Description: A repository of my personal packages
+SignWith: 7FE43ACEBB60D5E9
