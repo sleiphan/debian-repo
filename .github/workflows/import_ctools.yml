@@ -30,8 +30,8 @@ jobs:
       - name: Download latest release from project
         run: |
           mkdir incoming
-          curl -L -o incoming/ctools-dev.deb https://github.com/sleiphan/c-tools/releases/latest/download/ctools-dev.deb
-          curl -L -o incoming/ctools-runtime.deb https://github.com/sleiphan/c-tools/releases/latest/download/ctools-runtime.deb
+          curl -L -o incoming/ctools-dev.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-dev.deb
+          curl -L -o incoming/ctools-runtime.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-runtime.deb
 
       - name: Include package in repo
         run: |
