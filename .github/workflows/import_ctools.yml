@@ -10,7 +10,9 @@ permissions:
 
 jobs:
   update:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}/import-package:latest
 
     steps:
       - name: Checkout repo
@@ -18,8 +20,7 @@ jobs:
 
       - name: Install reprepro
         run: |
-          sudo apt update
-          sudo apt install -y reprepro gnupg curl
+          
 
       - name: Import GPG key
         run: |
