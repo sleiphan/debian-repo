@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Personal Repository
+Label: Personal Repository
+Suite: stable
+Codename: stable
+Date: Sat, 28 Mar 2026 14:19:48 UTC
+Architectures: amd64
+Components: main
+Description: A repository of my personal packages
+MD5Sum:
+ 9a53513fdc0bfdbb23fefdfd9f122974 827 main/binary-amd64/Packages
+ a50ca75ca75d8f239080d77c3e483160 427 main/binary-amd64/Packages.gz
+ 7b4b0a6a161cf68fdc1120362abc1b57 157 main/binary-amd64/Release
+SHA1:
+ b659a020dd854abeb181d6ab88243d5b96869707 827 main/binary-amd64/Packages
+ a75980d0a9449428d38822da9f572eb977bf8461 427 main/binary-amd64/Packages.gz
+ b3d867c2c322ad673f3b90361a9d0f6e105b2085 157 main/binary-amd64/Release
+SHA256:
+ 1e2c6c694073b1ab084873d94ff11ffd52d317ac05d1af5883c54baeb8ebdddf 827 main/binary-amd64/Packages
+ 83976e84df1c6d752866f7c6a204ad3524952de3101c59b2951c03195b396bb1 427 main/binary-amd64/Packages.gz
+ 6c52aeb6241972cd8a38d4bf4009956ebc7a2d61f544844836bf8b04cae5a850 157 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEA4u/VH4RzIc4H5DWf+Q6zrtg1ekFAmnH44QACgkQf+Q6zrtg
+1enfuA//X1DvBhfP/dRO/b3yFVE9lhW5W+X/gdv2vnYIQF16JdL2Hf4znDjhjgbV
+OgHbeY4jJAYnal/FXLN31XTrGNOEZNDPd+QFQl4I8AoNHp6MeJl1F3BcZTNaJGIj
+XnSUQTsZHPrIMeGizp2pxajJkgUMiSDTasqXiMpLngaVmxq8mPs93smJpSdGBEk7
+t2RFresFw6O8NOY08+52WaDFv7gFz8hebG/qvyuCwaj0hF6eGTHUPCyrMcPYvNRJ
+fR7LNBZasHHs9/O500T2tSxFb/vwFDwNHwmf0IwUrEi7HYjGT/8fqJV0hYYGyEDd
+rAnIamIKeICaeChaOQfpwaVWVvCtO6i6//mS45K2MFXhwwXk2v5siXtABuW8dRc0
+FWS9tgzFD8LsCmlusuYlVJRwHmb7Q7rOMbVSJJ2AE8YLJMcwZmTPAApkXwraxo8D
+gzlsN8sIKTosfgKDQcr1qUainJH64DPD9TBvB2BDSyUE5ebCYcSffLv2qMeHNtSr
+Xzhm1GNbCTS2ZytwLrEa/k0+1BTK6fKd0GASuFbX3eTOnwvFIpE9O22HxOejrQqc
+VlhKEtGEI7/FFahQ3QoYxj1+wHwJhzbMhM0OVsX2Y/R8N+3ery6e7fSA4CGzC7J5
+sAZ1bnN7E2I3Hd1z2YAIKE3CYIFrVaNQVr+MXiC/YHpjv06qdvQ=
+=yJ2R
+-----END PGP SIGNATURE-----
