@@ -1,0 +1,20 @@
+Origin: Personal Repository
+Label: Personal Repository
+Suite: stable
+Codename: stable
+Date: Sat, 28 Mar 2026 13:44:38 UTC
+Architectures: amd64
+Components: main
+Description: A repository of my personal packages
+MD5Sum:
+ 9a53513fdc0bfdbb23fefdfd9f122974 827 main/binary-amd64/Packages
+ a50ca75ca75d8f239080d77c3e483160 427 main/binary-amd64/Packages.gz
+ 7b4b0a6a161cf68fdc1120362abc1b57 157 main/binary-amd64/Release
+SHA1:
+ b659a020dd854abeb181d6ab88243d5b96869707 827 main/binary-amd64/Packages
+ a75980d0a9449428d38822da9f572eb977bf8461 427 main/binary-amd64/Packages.gz
+ b3d867c2c322ad673f3b90361a9d0f6e105b2085 157 main/binary-amd64/Release
+SHA256:
+ 1e2c6c694073b1ab084873d94ff11ffd52d317ac05d1af5883c54baeb8ebdddf 827 main/binary-amd64/Packages
+ 83976e84df1c6d752866f7c6a204ad3524952de3101c59b2951c03195b396bb1 427 main/binary-amd64/Packages.gz
+ 6c52aeb6241972cd8a38d4bf4009956ebc7a2d61f544844836bf8b04cae5a850 157 main/binary-amd64/Release
