@@ -30,8 +30,14 @@ jobs:
       - name: Download latest release from project
         run: |
           mkdir incoming
+
+          # CTools
           curl -L -o incoming/ctools-dev.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-dev.deb
           curl -L -o incoming/ctools-runtime.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-runtime.deb
+          
+          # Session Provider
+          curl -L -o incoming/blackhole-session-provider-dev.deb https://github.com/sleiphan/blackhole-session-provider/releases/latest/download/blackhole-session-provider-dev.deb
+          curl -L -o incoming/blackhole-session-provider-runtime.deb https://github.com/sleiphan/blackhole-session-provider/releases/latest/download/blackhole-session-provider-runtime.deb
 
       - name: Include package in repo
         run: |
