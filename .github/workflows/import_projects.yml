@@ -19,6 +19,17 @@ jobs:
         with:
           ref: packages
 
+      - name: Generate GitHub App token for accessing 
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.PACKAGES_ACCESS_APP_ID }}
+          private-key: ${{ secrets.PACKAGES_ACCESS_PRIVATE_KEY }}
+          owner: sleiphan
+          repositories: |
+            ctools
+            blackhole-session-provider
+
       - name: Fix workspace permissions
         run: |
           chown -R $(id -u):$(id -g) .
@@ -27,17 +38,24 @@ jobs:
         run: |
           echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
 
-      - name: Download latest release from project
+      - name: Download latest release from projects
+        shell: bash
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          mkdir incoming
+          mkdir -p incoming
 
-          # CTools
-          curl -L -o incoming/ctools-dev.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-dev.deb
-          curl -L -o incoming/ctools-runtime.deb https://github.com/sleiphan/ctools/releases/latest/download/ctools-runtime.deb
-          
-          # Session Provider
-          curl -L -o incoming/blackhole-session-provider-dev.deb https://github.com/sleiphan/blackhole-session-provider/releases/latest/download/blackhole-session-provider-dev.deb
-          curl -L -o incoming/blackhole-session-provider-runtime.deb https://github.com/sleiphan/blackhole-session-provider/releases/latest/download/blackhole-session-provider-runtime.deb
+          repos=(
+            sleiphan/ctools
+            sleiphan/blackhole-session-provider
+          )
+
+          for repo in "${repos[@]}"; do
+            gh release download \
+              --repo $repo \
+              --pattern "*.deb" \
+              --dir incoming/
+          done
 
       - name: Include package in repo
         run: |

@@ -4,4 +4,5 @@ RUN apt update && apt install -y \
     reprepro \
     gnupg \
     curl \
-    git
+    git \
+    gh
