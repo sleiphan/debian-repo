@@ -1,31 +1,31 @@
 Package: libblackhole-session-provider-dev
 Architecture: amd64
-Depends: libctools-dev, libblackhole-session-provider0 (= 0.0.2)
+Depends: libctools-dev, libblackhole-session-provider0 (= 0.0.3)
 Priority: optional
 Section: libdevel
-Filename: pool/main/libb/libblackhole-session-provider-dev/libblackhole-session-provider-dev_0.0.2_amd64.deb
-Size: 3846
-SHA256: ac4e2719e030e7f12c6b3c4d64c08c90ef7f12b19fa0723717792c34b2896eea
-SHA1: 2c7594465f47132ffcd8854a27c79b4f94636545
-MD5sum: ef9c8d733591a1f5df1e2cda03bf4a8d
+Filename: pool/main/libb/libblackhole-session-provider-dev/libblackhole-session-provider-dev_0.0.3_amd64.deb
+Size: 3898
+SHA256: 260bcc24aea75fd4e38d24b534b32c4c4f690b802ab75df5db908f4c03f0e8a7
+SHA1: ed34fd7dc6d8452e0d0bf3a7474a3958f2ca66e0
+MD5sum: 09bfbcdc0bda360c7cfbcb9021f32ffd
 Description: Single-threaded connection pump for C backends using io_uring, static memory pools, and explicit handoff
 Maintainer: Sleiphan Dawn
-Version: 0.0.2
-Installed-Size: 29
+Version: 0.0.3
+Installed-Size: 30
 
 Package: libblackhole-session-provider0
 Architecture: amd64
 Priority: optional
 Section: libdevel
-Filename: pool/main/libb/libblackhole-session-provider0/libblackhole-session-provider0_0.0.2_amd64.deb
-Size: 13726
-SHA256: 4d56ae33514924827b7a7c08ac4a2c26d6cba241472aa8a5859dff46919ac723
-SHA1: ba5809d02810b087a8b853eae950886e69654068
-MD5sum: f38dd02bd4b6c941e508b0935ac0ea0b
+Filename: pool/main/libb/libblackhole-session-provider0/libblackhole-session-provider0_0.0.3_amd64.deb
+Size: 14646
+SHA256: d842b56a16350b9e7267d8906acdca69ebc64d66a14d7281d0233595237eb2fd
+SHA1: 0f84e95d14a59615c7ecbefdf2da5a319871d3f5
+MD5sum: 397fe46e924ee7370de8c54b49319a1e
 Description: Single-threaded connection pump for C backends using io_uring, static memory pools, and explicit handoff
 Maintainer: Sleiphan Dawn
-Version: 0.0.2
-Installed-Size: 117
+Version: 0.0.3
+Installed-Size: 131
 
 Package: libctools-dev
 Architecture: amd64
