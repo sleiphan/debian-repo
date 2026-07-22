@@ -31,27 +31,27 @@ Package: libctools-dev
 Architecture: amd64
 Priority: optional
 Section: libdevel
-Filename: pool/main/libc/libctools-dev/libctools-dev_0.0.4_amd64.deb
-Size: 6504
-SHA256: 7048f6e932ac5c596220d038ad77e2c6f58d016ea5852c56f4c93e7410132c57
-SHA1: 9d534634068fffa0db46e9227f3d20b54e480c3d
-MD5sum: aa4b19085e3d763a25ec777156ae8db5
+Filename: pool/main/libc/libctools-dev/libctools-dev_0.0.5_amd64.deb
+Size: 10686
+SHA256: 3e2e5f4822cff980f102b87bc7f018d2d04b6f4d8ffbdc06c06e224af0fd0978
+SHA1: 9161019a69e897b1c246f01b28d27cf9956d74e3
+MD5sum: 8f8030f1cfe24211586a70260476e0f6
 Description: My personal C toolkit
 Maintainer: Sleiphan Dawn
-Version: 0.0.4
-Installed-Size: 47
+Version: 0.0.5
+Installed-Size: 68
 
 Package: libctools0
 Architecture: amd64
 Priority: optional
 Section: libdevel
-Filename: pool/main/libc/libctools0/libctools0_0.0.4_amd64.deb
-Size: 7178
-SHA256: 0c7e43ae150b388d12340a74eca826039f0e35e71d1e4bc2f8a16f29c530e8bb
-SHA1: 059ab98d02702b7d202adbe71f4f24a75389e96a
-MD5sum: b6279d92ed5fc15315283a6034012d8e
+Filename: pool/main/libc/libctools0/libctools0_0.0.5_amd64.deb
+Size: 7180
+SHA256: 618a9bb067b4aa6b6012b7e9942c34f93d73a9211dccf312ff4dd94777add5d6
+SHA1: e99dc53e1590eed28f1adba26dc2951eeb40916c
+MD5sum: a0f26598f96217cff7c27ee652982ee6
 Description: My personal C toolkit
 Maintainer: Sleiphan Dawn
-Version: 0.0.4
+Version: 0.0.5
 Installed-Size: 71
 
