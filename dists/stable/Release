@@ -2,19 +2,19 @@ Origin: Personal Repository
 Label: Personal Repository
 Suite: stable
 Codename: stable
-Date: Sun, 02 Aug 2026 22:27:39 UTC
+Date: Sun, 06 Sep 2026 15:16:21 UTC
 Architectures: amd64
 Components: main
 Description: A repository of my personal packages
 MD5Sum:
- 50898633351c31ac694ae2ce5502dc3c 2008 main/binary-amd64/Packages
- fb1d99396588d976a4afe44640d6d964 778 main/binary-amd64/Packages.gz
+ 87cc910cb9f71ab3ef3547545c2a9c3b 2008 main/binary-amd64/Packages
+ 6253dba18bd0cc60b8aad860e62a7f6d 779 main/binary-amd64/Packages.gz
  7b4b0a6a161cf68fdc1120362abc1b57 157 main/binary-amd64/Release
 SHA1:
- 2c25967f8a02459129bbfb6d50b34d7febe79376 2008 main/binary-amd64/Packages
- 406a4f04f61e2c19f034a7899465dca56af99629 778 main/binary-amd64/Packages.gz
+ 9a31070d3f03ae1ff4c6940b1ec20c126477caa3 2008 main/binary-amd64/Packages
+ 87ddc6d1a7738b34d6ec3350f9babbcbbbbce20f 779 main/binary-amd64/Packages.gz
  b3d867c2c322ad673f3b90361a9d0f6e105b2085 157 main/binary-amd64/Release
 SHA256:
- 61c8013ca1202e46046719847370cc140a52756bd7d6b7d1399572be2349d05c 2008 main/binary-amd64/Packages
- bb14c10e076cead8a643d4e0f583e92425c397f00323c666d77f78b6a51f850d 778 main/binary-amd64/Packages.gz
+ b31f77327f16c6d4bebb8524f095b8598d21fb809361216ec8a6006e7a6d3e8a 2008 main/binary-amd64/Packages
+ cd8882dc870fedaa5a708c22928f0441d5e3bff7ec651192ffd91417d2adffdd 779 main/binary-amd64/Packages.gz
  6c52aeb6241972cd8a38d4bf4009956ebc7a2d61f544844836bf8b04cae5a850 157 main/binary-amd64/Release
